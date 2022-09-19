@@ -60,7 +60,7 @@ const HomePage = () => {
                 <div className='mt-12'>
                    <h6 className='text-[#262220] tracking-widest text-center font-medium text-2xl'>Text</h6>
                    <div className='mt-8'>
-                       <img src={pic1} alt="pic1" />
+                       <img src={pic1} alt="pic1" className='' />
                    </div>
                 </div>
 

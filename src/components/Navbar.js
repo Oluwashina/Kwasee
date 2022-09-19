@@ -13,10 +13,10 @@ const NavbarComponent = () => {
              {/* desktop nav menu */}
              <ul className='md:flex hidden justify-between items-center mt-8'>
                 <li>
-                    <Link to="/" className="text-[#262220] text-sm tracking-widest">Our Services</Link>
+                    <Link to="/our-services" className="text-[#262220] text-sm tracking-widest">Our Services</Link>
                 </li>
                 <li>
-                    <Link to="/" className="text-[#262220] text-sm tracking-widest">Gallery</Link>
+                    <Link to="/gallery" className="text-[#262220] text-sm tracking-widest">Gallery</Link>
                 </li>
                 <li>
                     <Link to="/" className="text-[#262220] text-sm tracking-widest">
@@ -24,7 +24,7 @@ const NavbarComponent = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/" className="text-[#262220] text-sm tracking-widest">About Us</Link>
+                    <Link to="/about-us" className="text-[#262220] text-sm tracking-widest">About Us</Link>
                 </li>
                 <li>
                     <Link to="/" className="text-[#262220] text-sm tracking-widest">Contact Us</Link>
