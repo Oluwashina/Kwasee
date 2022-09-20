@@ -21,6 +21,9 @@ const NavbarComponent = () => {
     const handleRoute = (val) =>{
      setNavShow(false)
      switch(val){
+         case 'home':
+             navigate('/')
+             break;
          case 'services':
             navigate('/our-services')
              break;
@@ -86,6 +89,9 @@ const NavbarComponent = () => {
                      <img src={close_icon} alt="close" />
                  </div>
                  <ul className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+                 <li className='text-center mb-8'>
+                        <p onClick={() => handleRoute('home')} className='text-[#262220] font-semibold tracking-wide text-2xl'>Home</p>
+                     </li>
                       <li className='text-center mb-8'>
                         <p onClick={() => handleRoute('services')} className='text-[#262220] font-semibold tracking-wide text-2xl'>Our Services</p>
                      </li>
