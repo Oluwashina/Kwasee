@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const FooterComponent = () => {
 
@@ -11,11 +11,11 @@ const FooterComponent = () => {
 
     return ( 
         <>
-        <div className='bg-[#262220] py-8 md:px-8 px-4'>
+        <div id="footer" className='bg-[#262220] py-8 md:px-8 px-4'>
            
            <div className='grid md:grid-cols-3 gap-8 md:gap-0 py-10 md:py-20'>
                <div className='flex flex-col justify-center'>
-                    <h6 className='text-[#F7F1F0] text-2xl tracking-[0.3em]'>KWASEE</h6>
+                    <Link to="/" className='text-[#F7F1F0] text-2xl tracking-[0.3em]'>KWASEE</Link>
                </div>
                <div>
                  <div>

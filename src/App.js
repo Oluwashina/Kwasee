@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollToTop from "./components/ScrollWrapper/ScrollToTop";
 import HomePage from './pages/Home/home';
 import AboutPage from './pages/About/about';
 import ServicesPage from './pages/Services/services';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
           <Router>
+          <ScrollToTop>
             <Routes>
                 <Route path="/" exact element={ 
                   <PageWrapper>
@@ -32,6 +34,7 @@ function App() {
                   </PageWrapper>
                  } />
             </Routes>
+            </ScrollToTop>
           </Router>
     </div>
   );
