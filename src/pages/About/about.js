@@ -4,12 +4,12 @@ import pic2 from '../../assets/pic2.png'
 const AboutPage = () => {
     return ( 
         <>
-            <div className='grid grid-cols-2 gap-6 pb-10'>
+            <div className='grid md:grid-cols-2 gap-8 md:gap-6 pb-10'>
                 <div>
                     <img src={pic2} alt="pic2" className='' /> 
                 </div>
                 <div className='flex flex-col justify-center'>
-                    <div className='md:px-10 px-6'>
+                    <div className='md:px-10 px-4'>
                         <p className='text-[#262220] opacity-[.75] font-medium tracking-wide'>WELCOME TO KWASEE</p>
                         <h5 className='text-[#262220] font-semibold text-4xl mt-2 max-w-xs leading-[140%] tracking-wide'>THE JOURNEY BEGINS</h5>
                        <div className='max-w-xl'>

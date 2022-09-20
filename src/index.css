@@ -9,3 +9,7 @@ body{
   scroll-behavior: smooth;
   /* background: #D5D5D5; */
 }
+
+::-webkit-scrollbar {
+ display: none;
+}

@@ -11,16 +11,16 @@ const FooterComponent = () => {
 
     return ( 
         <>
-        <div className='bg-[#262220] py-8 md:px-8 px-6'>
+        <div className='bg-[#262220] py-8 md:px-8 px-4'>
            
-           <div className='grid grid-cols-3 py-20'>
+           <div className='grid md:grid-cols-3 gap-8 md:gap-0 py-10 md:py-20'>
                <div className='flex flex-col justify-center'>
                     <h6 className='text-[#F7F1F0] text-2xl tracking-[0.3em]'>KWASEE</h6>
                </div>
                <div>
                  <div>
                     <h6 className="text-[#F7F1F0] font-semibold tracking-wide">CONTACT US</h6>
-                        <ul className="mt-2">
+                        <ul className="mt-1 md:mt-2">
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">kwasee.official@gmail.com</a>
                             </li>
@@ -28,18 +28,18 @@ const FooterComponent = () => {
                   </div>
                   <div className='mt-8'>
                     <h6 className="text-[#F7F1F0] font-semibold tracking-wide">LINKS</h6>
-                        <ul className="mt-2">
+                        <ul className="mt-1 md:mt-2">
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Our blog</a>
                             </li>
-                            <li className='mt-1'>
+                            <li className='md:mt-1'>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Contact</a>
                             </li>
                         </ul>
                   </div>
                   <div className='mt-8'>
                     <h6 className="text-[#F7F1F0] font-semibold tracking-wide">SOCIAL MEDIA</h6>
-                        <ul className="mt-2">
+                        <ul className="mt-1 md:mt-2">
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Facebook</a>
                             </li>
