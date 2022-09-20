@@ -72,14 +72,14 @@ const GalleryPage = () => {
       img32,
       img33,
       img34,
-      img12,
-      img3,
       img8,
-      img5,
-      img1,
-      img16,
+      img10,
+      img9,
+      img22,
+      img11,
       img4,
-      img2
+      img16,
+      img21
     ]
 
     return ( 

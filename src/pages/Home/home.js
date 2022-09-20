@@ -1,9 +1,52 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import pic1 from '../../assets/pic1.png'
+import Modal from '../../components/Modals/modal'
+
+
 
 const HomePage = () => {
+
+    const [show, setShow] = useState(false)
+    const showModal = () =>{
+        setShow(!show)
+    }
+
+    useEffect(()=>{
+        setTimeout(() => {
+            setShow(true)
+        }, 3000);
+    },[])
+
     return ( 
         <>
+            <Modal show={show} showModal={showModal}>
+                <div className='py-8 px-4 m:px-6'>
+
+                    <div className='bg-white w-full h-[300px]'>
+                    </div>
+                    <div className='text-center mt-6'>
+                        <h6 className='text-[#F7F1F0] tracking-wide font-semibold text-xl'>JOIN OUR FASHION NETWORK</h6>
+                        <p className='text-[#F7F1F0] tracking-wide mt-1 text-sm'>Receive newsletters on fashion trends</p>
+                    </div>
+
+                    <form className='mt-4'>
+                        <div>
+                          <input type="text"  
+                          className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Full Name" required />
+                        </div>
+                        <div className='mt-3'>
+                          <input type="email"  
+                          className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Email Address" required />
+                        </div>
+                        <div className='mt-6'>
+                            <button type="submit" className="w-full text-[#F7F1F0] bg-[#725C5C] rounded-[4px] tracking-wide focus:outline-none font-semibold text-base px-6 py-4">SUBSCRIBE</button>
+                        </div>
+                   </form>
+
+                </div>
+                
+            </Modal>
+
             <div className='bg-[#262220] min-h-[300px] md:min-h-[500px] flex flex-col justify-center'>
                 <div className='text-center'>
                     <h6 className='text-[#F7F1F0] font-semibold tracking-widest text-base'>KWASEE</h6>
