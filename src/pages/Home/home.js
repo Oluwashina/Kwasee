@@ -1,14 +1,35 @@
 import React,{useEffect, useState} from 'react';
 import pic1 from '../../assets/pic1.png'
 import Modal from '../../components/Modals/modal'
-
+import axios from 'axios'
 
 
 const HomePage = () => {
 
     const [show, setShow] = useState(false)
+
+    const [fullname, setFullName] = useState("")
+    const [email, setEmail] = useState("")
+    const [isBtnDisabled, setIsBtnDisabled] = useState(false)
+
     const showModal = () =>{
         setShow(!show)
+    }
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        setIsBtnDisabled(true)
+        axios.post('https://sheet.best/api/sheets/de4913d8-2e9f-4aa2-a6b8-6acb1d42824c', {
+            fullname: fullname,
+            email: email
+        })
+        .then(response => {
+            console.log(response)
+            setIsBtnDisabled(false)
+            setShow(!show)
+            alert('Request received succesfully!')
+        })
+
     }
 
     useEffect(()=>{
@@ -16,6 +37,8 @@ const HomePage = () => {
             setShow(true)
         }, 3000);
     },[])
+
+
 
     return ( 
         <>
@@ -29,17 +52,21 @@ const HomePage = () => {
                         <p className='text-[#F7F1F0] tracking-wide mt-1 text-sm'>Receive newsletters on fashion trends</p>
                     </div>
 
-                    <form className='mt-4'>
+                    <form onSubmit={handleSubmit} className='mt-4'>
                         <div>
-                          <input type="text"  
+                          <input type="text" 
+                          value={fullname}
+                          onChange={(e) => setFullName(e.target.value)} 
                           className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Full Name" required />
                         </div>
                         <div className='mt-3'>
                           <input type="email"  
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)} 
                           className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Email Address" required />
                         </div>
                         <div className='mt-6'>
-                            <button type="submit" className="w-full text-[#F7F1F0] bg-[#725C5C] rounded-[4px] tracking-wide focus:outline-none font-semibold text-base px-6 py-4">SUBSCRIBE</button>
+                            <button type="submit" disabled={isBtnDisabled} className="w-full disabled:bg-[#725C5C] disabled:opacity-50  text-[#F7F1F0] bg-[#725C5C] rounded-[4px] tracking-wide focus:outline-none font-semibold text-base px-6 py-4">SUBSCRIBE</button>
                         </div>
                    </form>
 
