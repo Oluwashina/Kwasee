@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react';
 import pic1 from '../../assets/pic1.png'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
-
+import pic3 from '../../assets/pic3.svg'
 
 const HomePage = () => {
 
@@ -43,9 +43,10 @@ const HomePage = () => {
     return ( 
         <>
             <Modal show={show} showModal={showModal}>
-                <div className='py-8 px-4 m:px-6'>
+                <div className='py-8 px-4 md:px-6'>
 
-                    <div className='bg-white w-full h-[300px]'>
+                    <div className='bg-white w-full'>
+                        <img src={pic3} alt="pic" className='w-full' />
                     </div>
                     <div className='text-center mt-6'>
                         <h6 className='text-[#F7F1F0] tracking-wide font-semibold text-xl'>JOIN OUR FASHION NETWORK</h6>
@@ -76,9 +77,9 @@ const HomePage = () => {
 
             <div className='bg-[#262220] min-h-[300px] md:min-h-[500px] flex flex-col justify-center'>
                 <div className='text-center'>
-                    <h6 className='text-[#F7F1F0] font-semibold tracking-widest text-base'>KWASEE</h6>
-                    <p className='text-[#F7F1F0] tracking-wide leading-5 text-xs mt-1 max-w-xs md:max-w-xl mx-auto'>
-                    We help you discover a signature style that suits your personality and body type.It is not whether or not you have style, is it expressed through your clothes? Use your style as a tool to stand out.
+                    <h6 className='text-[#F7F1F0] font-semibold tracking-widest text-base md:text-xl'>KWASEE</h6>
+                    <p className='text-[#F7F1F0] tracking-wide leading-5 text-xs md:text-sm mt-1 md:mt-2 max-w-xs md:max-w-xl mx-auto'>
+                    We help you discover a signature style that suits your personality and body type. It is not whether or not you have style, is it expressed through your clothes? Use your style as a tool to stand out.
                     </p>
                 </div>         
             </div>
@@ -89,7 +90,7 @@ const HomePage = () => {
                     <div className='bg-[#262220] w-[200px] md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
 
                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
-                            <h6 className='text-[#F7F1F0] text-sm md:text-base font-medium tracking-wide'>VIRTUAL STYLING </h6>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>VIRTUAL <br/> STYLING </h6>
                             <ul className='mt-2'>
                                 <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>Closet Edit: $100</li>
                                 <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>Image Consultation: $150</li>
@@ -99,8 +100,8 @@ const HomePage = () => {
                     </div>
                     <div className='bg-[#262220] w-[200px] md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
 
-                      <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
-                            <h6 className='text-[#F7F1F0] text-sm md:text-base font-medium tracking-wide'>BIRTHDAY SHOOT </h6>
+                      <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>BIRTHDAY <br/> SHOOT </h6>
                             <ul className='mt-2'>
                                 <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>$106/PER LOOK</li>
                             </ul>
@@ -108,8 +109,8 @@ const HomePage = () => {
 
                     </div>
                     <div className='bg-[#262220] w-[200px] md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
-                        <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
-                            <h6 className='text-[#F7F1F0] font-medium tracking-wide'>MATERNITY SHOOT</h6>
+                        <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>MATERNITY <br/> SHOOT</h6>
                             <ul className='mt-2'>
                                 <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>$106/PER LOOK</li>
                             </ul>
@@ -118,7 +119,7 @@ const HomePage = () => {
                     </div>
                     <div className='bg-[#262220] w-[200px] md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
                         <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-20'>
-                            <h6 className='text-[#F7F1F0] font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
                             <ul className='mt-2'>
                                 <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>$250/Whole Day</li>
                             </ul>
