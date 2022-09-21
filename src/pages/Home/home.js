@@ -22,10 +22,10 @@ const HomePage = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         swipeToSlide: true,
-        speed: 800,
+        speed: 500,
         autoplay: true,
-        autoplaySpeed: 5000,
-        cssEase: "linear",
+        autoplaySpeed: 3000,
+        easing: "linear",
         responsive: [
           {
             breakpoint: 1024,
@@ -136,7 +136,7 @@ const HomePage = () => {
             <div className='py-10'>
                 <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Packages</h6>
                 <div className='grid grid-cols-4 gap-56 md:gap-6 mt-8 px-4 md:px-0 overflow-scroll'>
-                    <div className='bg-[#262220] w-[200px] md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
+                    <div className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
 
                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>VIRTUAL <br/> STYLING </h6>
@@ -147,7 +147,7 @@ const HomePage = () => {
                         </div>
 
                     </div>
-                    <div className='bg-[#262220] w-[200px] md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <div className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
 
                       <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>BIRTHDAY <br/> SHOOT </h6>
@@ -157,7 +157,7 @@ const HomePage = () => {
                         </div>
 
                     </div>
-                    <div className='bg-[#262220] w-[200px] md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <div className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
                         <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>MATERNITY <br/> SHOOT</h6>
                             <ul className='mt-2'>
@@ -166,7 +166,7 @@ const HomePage = () => {
                         </div>
 
                     </div>
-                    <div className='bg-[#262220] w-[200px] md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <div className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
                         <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-20'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
                             <ul className='mt-2'>
@@ -178,7 +178,7 @@ const HomePage = () => {
                 </div>
 
                 <div className='mt-10 md:mt-12'>
-                   <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Text</h6>
+                   {/* <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Text</h6> */}
                    <Slider className='mt-8' {...settings}>
                        <div>
                            <img src={pic1} alt="pic1" className='' />

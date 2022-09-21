@@ -88,7 +88,7 @@ const NavbarComponent = () => {
              </div>
 
              {/* mobile menu */}
-             <div className={navShow ? 'md:hidden bg-[#D5D5D5] w-full h-full top-0 left-0 z-20 fixed overflow-hidden': 'hidden'}>
+             <div className={navShow ? 'md:hidden bg-[#FFFFFF] w-full h-full top-0 left-0 z-20 fixed overflow-hidden': 'hidden'}>
                  <div onClick={toggleClose} className='cursor-pointer absolute right-6 top-6 bg-[#262220] flex justify-center items-center w-[40px] h-[40px] rounded-full'>
                      <img src={close_icon} alt="close" />
                  </div>
