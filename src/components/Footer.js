@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/icons/Kwasee_white.svg'
+
 
 const FooterComponent = () => {
 
@@ -15,7 +17,9 @@ const FooterComponent = () => {
            
            <div className='grid md:grid-cols-3 gap-8 md:gap-0 py-10 md:py-20'>
                <div className='flex flex-col justify-center'>
-                    <Link to="/" className='text-[#F7F1F0] text-2xl tracking-[0.3em]'>KWASEE</Link>
+                   <Link to="/">
+                      <img src={logo} alt="logo" className="w-[150px]" />
+                   </Link>
                </div>
                <div>
                  <div>

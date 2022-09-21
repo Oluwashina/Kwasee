@@ -1,10 +1,58 @@
 import React,{useEffect, useState} from 'react';
 import pic1 from '../../assets/pic1.png'
+import pic2 from '../../assets/pic_2.png'
+import pic4 from '../../assets/pic_3.png'
+import pic5 from '../../assets/pic_4.png'
+import pic6 from '../../assets/pic_5.png'
+import logo from '../../assets/icons/Kwasee_white.svg'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
 import pic3 from '../../assets/pic3.svg'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HomePage = () => {
+
+      const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        initialSlide: 1,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        cssEase: "linear",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      };
 
     const [show, setShow] = useState(false)
 
@@ -49,11 +97,10 @@ const HomePage = () => {
                         <img src={pic3} alt="pic" className='w-full' />
                     </div>
                     <div className='text-center mt-6'>
-                        <h6 className='text-[#F7F1F0] tracking-wide font-semibold text-xl'>JOIN OUR FASHION NETWORK</h6>
-                        <p className='text-[#F7F1F0] tracking-wide mt-1 text-sm'>Receive newsletters on fashion trends</p>
+                        <h6 className='text-[#F7F1F0] tracking-wide font-semibold text-xl'>JOIN OUR FASHION FAM</h6>
                     </div>
 
-                    <form onSubmit={handleSubmit} className='mt-4'>
+                    <form onSubmit={handleSubmit} className='mt-5'>
                         <div>
                           <input type="text" 
                           value={fullname}
@@ -77,7 +124,9 @@ const HomePage = () => {
 
             <div className='bg-[#262220] min-h-[300px] md:min-h-[500px] flex flex-col justify-center'>
                 <div className='text-center'>
-                    <h6 className='text-[#F7F1F0] font-semibold tracking-widest text-base md:text-xl'>KWASEE</h6>
+                    <div className='flex justify-center'>
+                         <img src={logo} alt="logo" />
+                    </div>
                     <p className='text-[#F7F1F0] tracking-wide leading-5 text-xs md:text-sm mt-1 md:mt-2 max-w-xs md:max-w-xl mx-auto'>
                     We help you discover a signature style that suits your personality and body type. It is not whether or not you have style, is it expressed through your clothes? Use your style as a tool to stand out.
                     </p>
@@ -130,15 +179,29 @@ const HomePage = () => {
 
                 <div className='mt-10 md:mt-12'>
                    <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Text</h6>
-                   <div className='mt-8'>
-                       <img src={pic1} alt="pic1" className='' />
-                   </div>
+                   <Slider className='mt-8' {...settings}>
+                       <div>
+                           <img src={pic1} alt="pic1" className='' />
+                       </div>
+                       <div>
+                           <img src={pic2} alt="pic2" className='' />
+                       </div>
+                       <div>
+                           <img src={pic4} alt="pic4" className='' />
+                       </div>
+                       <div>
+                           <img src={pic5} alt="pic5" className='' />
+                       </div>
+                       <div>
+                           <img src={pic6} alt="pic6" className='' />
+                       </div>
+                    </Slider>
                 </div>
 
                 <div className='mt-10 md:mt-12'>
                     <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Our Services</h6>
                     <div className='mt-8 grid md:grid-cols-5 md:px-8 px-4'>
-                        <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0 md:border-r border-[#C3A6A0 border-opacity-[.5] md:border-opacity-[.5] px-4'>
+                        <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0 md:border-r border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
                             <h4 className='text-[#262220] text-center text-lg md:text-xl font-semibold tracking-wide'>Bridal Styling</h4>
                         </div>
                         <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0  md:border-r md:border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
