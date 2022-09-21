@@ -19,7 +19,7 @@ const FooterComponent = () => {
                </div>
                <div>
                  <div>
-                    <h6 className="text-[#F7F1F0] font-semibold tracking-wide">CONTACT US</h6>
+                    <h6 className="text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">CONTACT US</h6>
                         <ul className="mt-1 md:mt-2">
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">kwasee.official@gmail.com</a>
@@ -27,7 +27,7 @@ const FooterComponent = () => {
                         </ul>
                   </div>
                   <div className='mt-8'>
-                    <h6 className="text-[#F7F1F0] font-semibold tracking-wide">LINKS</h6>
+                    <h6 className="text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">LINKS</h6>
                         <ul className="mt-1 md:mt-2">
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Our blog</a>
@@ -38,7 +38,7 @@ const FooterComponent = () => {
                         </ul>
                   </div>
                   <div className='mt-8'>
-                    <h6 className="text-[#F7F1F0] font-semibold tracking-wide">SOCIAL MEDIA</h6>
+                    <h6 className="text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">SOCIAL MEDIA</h6>
                         <ul className="mt-1 md:mt-2">
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Facebook</a>
@@ -51,7 +51,7 @@ const FooterComponent = () => {
                </div>
                <div>
                     <div>
-                        <h6 className='text-[#F7F1F0] font-medium tracking-wide '>Newsletter</h6>
+                        <h6 className='text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-medium tracking-wide '>Newsletter</h6>
                         <p className='text-[#F7F1F0] tracking-wide text-sm mt-4'>
                         Subscribe to get updates on our daily services
                         </p>
