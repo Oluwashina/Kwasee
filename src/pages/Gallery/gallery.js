@@ -34,6 +34,8 @@ import img31 from '../../assets/gallery/img31.png'
 import img32 from '../../assets/gallery/img32.png'
 import img33 from '../../assets/gallery/img33.png'
 import img34 from '../../assets/gallery/img34.png'
+import img35 from '../../assets/gallery/img35.png'
+import img36 from '../../assets/gallery/img36.png'
 
 const GalleryPage = () => {
 
@@ -72,13 +74,10 @@ const GalleryPage = () => {
       img32,
       img33,
       img34,
-      img8,
-      img10,
-      img9,
       img22,
-      img11,
-      img4,
-      img16,
+      img25,
+      img35,
+      img36,
       img21
     ]
 
@@ -86,7 +85,7 @@ const GalleryPage = () => {
         <>
             <div>
                 <ResponsiveMasonry
-                    columnsCountBreakPoints={{350: 2, 750: 2, 900: 3}}
+                    columnsCountBreakPoints={{350: 3, 750: 2, 900: 3}}
                 >
                     <Masonry 
                     gutter="10px">
