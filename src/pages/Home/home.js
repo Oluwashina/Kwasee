@@ -141,29 +141,29 @@ const HomePage = () => {
             <div className='py-10'>
                 <h6 className='text-[#262220] tracking-widest text-center italic font-medium text-xl md:text-2xl'>Packages</h6>
                 <div className='grid grid-cols-4 gap-56 md:gap-6 mt-8 px-4 md:px-0 overflow-scroll'>
-                    <Link to="/virtual-styling" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
+                    <Link to="/virtual-styling" className='bg-virtual_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
 
-                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
+                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-10'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>VIRTUAL STYLING </h6>
                         </div>
 
                     </Link>
 
-                    <Link to="/birthday-shoot" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
-                      <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
+                    <Link to="/birthday-shoot" className='bg-birthday_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
+                      <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-10'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>BIRTHDAY SHOOT </h6>
                         </div>
 
                     </Link>
 
-                    <Link to="/maternity-shoot" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
-                        <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
+                    <Link to="/maternity-shoot" className='bg-maternity_small bg-cover bg-center] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                        <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-10'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>MATERNITY SHOOT</h6>
                         </div>
                     </Link>
 
-                    <Link to="/personal-shopping" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
-                        <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-20'>
+                    <Link to="/personal-shopping" className='bg-shopping bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                        <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-10'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
                         </div>
                      </Link>
