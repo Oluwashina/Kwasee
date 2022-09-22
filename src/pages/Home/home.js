@@ -77,14 +77,14 @@ const HomePage = () => {
             console.log(response)
             setIsBtnDisabled(false)
             setShow(!show)
-            alert('Request received succesfully!')
+            alert('Thank you for joining the family!')
         })
 
     }
 
     useEffect(()=>{
         setTimeout(() => {
-            setShow(false)
+            setShow(true)
         }, 3000);
     },[])
 
