@@ -7,7 +7,7 @@ import pic6 from '../../assets/pic_5.png'
 import logo from '../../assets/icons/Kwasee_white.svg'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
-import pic3 from '../../assets/pic3.svg'
+import pic3 from '../../assets/icons/pic3.svg'
 import hero from '../../assets/hero.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -96,7 +96,7 @@ const HomePage = () => {
                 <div className='py-8 px-4 md:px-6'>
 
                     <div className='bg-white w-full'>
-                        <img src={pic3} alt="pic" className='w-full' />
+                        <img src={pic3} alt="join us" className='w-full' />
                     </div>
                     <div className='text-center mt-6'>
                         <h6 className='text-[#F7F1F0] tracking-wide font-semibold text-xl'>JOIN OUR FASHION FAM</h6>
