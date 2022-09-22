@@ -47,7 +47,7 @@ const NavbarComponent = () => {
         <>
          <div className='py-6 md:py-6 md:px-8 px-4'>
              <div className='text-center md:hidden'>
-                 <p className='text-[#000000] font-medium tracking-wide md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
+                 <p className='text-[#000000] tracking-wide italic md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
              </div>
 
              {/* desktop nav menu */}
@@ -72,7 +72,7 @@ const NavbarComponent = () => {
              </ul>
 
              <div className='text-center mt-4 hidden md:block'>
-                 <p className='text-[#000000] font-medium tracking-wide md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
+                 <p className='text-[#000000] tracking-wide italic md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
              </div>
 
              {/* mobile nav */}

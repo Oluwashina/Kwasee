@@ -23,7 +23,7 @@ const FooterComponent = () => {
                </div>
                <div>
                  <div>
-                    <h6 className="text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">CONTACT US</h6>
+                    <h6 className="text-[#F7F1F0] font-raleway  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">CONTACT US</h6>
                         <ul className="mt-1 md:mt-2">
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">kwasee.official@gmail.com</a>
@@ -31,31 +31,31 @@ const FooterComponent = () => {
                         </ul>
                   </div>
                   <div className='mt-8'>
-                    <h6 className="text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">LINKS</h6>
+                    <h6 className="text-[#F7F1F0] font-raleway  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">LINKS</h6>
                         <ul className="mt-1 md:mt-2">
                             <li>
-                                <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Our blog</a>
+                                <Link to="/" className="text-[#F7F1F0] text-sm tracking-wide">Our blog</Link>
                             </li>
                             <li className='md:mt-1'>
-                                <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Contact</a>
+                                <a href="tel:+2349012324754" className="text-[#F7F1F0] text-sm tracking-wide">Contact</a>
                             </li>
                         </ul>
                   </div>
                   <div className='mt-8'>
-                    <h6 className="text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-semibold tracking-wide">SOCIAL MEDIA</h6>
+                    <h6 className="text-[#F7F1F0] font-raleway opacity-[.5] md:opacity-[1] font-semibold tracking-wide">SOCIAL MEDIA</h6>
                         <ul className="mt-1 md:mt-2">
                             <li>
-                                <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Facebook</a>
+                                <a href="https://www.instagram.com/kwasee.official/" target="_blank" rel='noreferrer' className="text-[#F7F1F0] text-sm tracking-wide">Facebook</a>
                             </li>
                             <li className='mt-1'>
-                                <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">Instagram</a>
+                                <a href="https://www.instagram.com/kwasee.official/" target="_blank" rel='noreferrer' className="text-[#F7F1F0] text-sm tracking-wide">Instagram</a>
                             </li>
                         </ul>
                   </div>
                </div>
                <div>
                     <div>
-                        <h6 className='text-[#F7F1F0]  opacity-[.5] md:opacity-[1] font-medium tracking-wide '>Newsletter</h6>
+                        <h6 className='text-[#F7F1F0] font-raleway opacity-[.5] md:opacity-[1] font-medium tracking-wide '>NEWSLETTER</h6>
                         <p className='text-[#F7F1F0] tracking-wide text-sm mt-4'>
                         Subscribe to get updates on our daily services
                         </p>

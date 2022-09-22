@@ -8,6 +8,7 @@ import logo from '../../assets/icons/Kwasee_white.svg'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
 import pic3 from '../../assets/pic3.svg'
+import hero from '../../assets/hero.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -83,7 +84,7 @@ const HomePage = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            setShow(true)
+            setShow(false)
         }, 3000);
     },[])
 
@@ -123,57 +124,47 @@ const HomePage = () => {
                 
             </Modal>
 
-            <div className='bg-[#262220] min-h-[300px] md:min-h-[500px] flex flex-col justify-center'>
-                <div className='text-center'>
+            <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
+                <div>
+                    <img src={hero} alt="hero" />
+                </div>            
+                <div className='text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                     <div className='flex justify-center'>
                          <img src={logo} alt="logo" />
                     </div>
-                    <p className='text-[#F7F1F0] tracking-wide leading-5 text-xs md:text-sm mt-1 md:mt-2 max-w-xs md:max-w-xl mx-auto'>
+                    <p className='text-[#F7F1F0] tracking-wide leading-5 text-xs md:text-sm mt-1 md:mt-2 max-w-md md:max-w-xl mx-auto'>
                     We help you discover a signature style that suits your personality and body type. It is not whether or not you have style, is it expressed through your clothes? Use your style as a tool to stand out.
                     </p>
                 </div>         
             </div>
 
             <div className='py-10'>
-                <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Packages</h6>
+                <h6 className='text-[#262220] tracking-widest text-center italic font-medium text-xl md:text-2xl'>Packages</h6>
                 <div className='grid grid-cols-4 gap-56 md:gap-6 mt-8 px-4 md:px-0 overflow-scroll'>
                     <Link to="/virtual-styling" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
 
-                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
-                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>VIRTUAL <br/> STYLING </h6>
-                            <ul className='mt-2'>
-                                <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>Closet Edit: $100</li>
-                                <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>Image Consultation: $150</li>
-                            </ul>
+                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>VIRTUAL STYLING </h6>
                         </div>
 
                     </Link>
 
                     <Link to="/birthday-shoot" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
                       <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
-                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>BIRTHDAY <br/> SHOOT </h6>
-                            <ul className='mt-2'>
-                                <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>$106/PER LOOK</li>
-                            </ul>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>BIRTHDAY SHOOT </h6>
                         </div>
 
                     </Link>
 
                     <Link to="/maternity-shoot" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
-                        <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-20'>
-                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>MATERNITY <br/> SHOOT</h6>
-                            <ul className='mt-2'>
-                                <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>$106/PER LOOK</li>
-                            </ul>
+                        <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>MATERNITY SHOOT</h6>
                         </div>
                     </Link>
 
                     <Link to="/personal-shopping" className='bg-[#262220] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
                         <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-20'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
-                            <ul className='mt-2'>
-                                <li className='text-[#F7F1F0] text-xs md:text-sm tracking-wide'>$250/Whole Day</li>
-                            </ul>
                         </div>
                      </Link>
 
@@ -201,7 +192,7 @@ const HomePage = () => {
                 </div>
 
                 <div className='mt-10 md:mt-12'>
-                    <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Our Services</h6>
+                    <h6 className='text-[#262220] italic tracking-[0.03em] text-center font-medium text-xl md:text-2xl'>Our Services</h6>
                     <div className='mt-8 grid md:grid-cols-5 md:px-8 px-4'>
                         <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0 md:border-r border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
                             <h4 className='text-[#262220] text-center text-lg md:text-xl font-semibold tracking-wide'>Bridal Styling</h4>

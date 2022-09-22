@@ -3,12 +3,13 @@ import bridal_img from '../../assets/bridal_style.svg'
 import birthday_img from '../../assets/birthday_style.svg'
 import commercial_img from '../../assets/commercial_style.svg'
 import fashion_img from '../../assets/fashion_style.svg'
+import virtual_img from '../../assets/virtual_style.svg'
 
 const ServicesPage = () => {
     return ( 
         <>
             <div className='py-10'>
-                <h6 className='text-[#262220] tracking-widest text-center font-medium text-2xl'>Our Services</h6>
+                <h6 className='text-[#262220] tracking-widest italic text-center font-medium text-2xl'>Our Services</h6>
                
                 <div className='mt-8 grid md:grid-cols-5 md:px-8 px-4 md:hidden'>
                     <div className='flex flex-col justify-center  h-[100px] md:h-[500px] border-b md:border-b-0 md:border-r border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
@@ -93,7 +94,7 @@ const ServicesPage = () => {
                         </div>
                     </div>
                     <div className='flex h-[650px] overflow-hidden'>
-                        <img src={birthday_img} alt="birthday" className='w-full object-cover' />
+                        <img src={virtual_img} alt="virtual" className='w-full object-cover' />
                     </div>
                 </div>
 
