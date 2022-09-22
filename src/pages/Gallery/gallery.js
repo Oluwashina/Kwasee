@@ -6,7 +6,7 @@ import img3 from '../../assets/gallery/img3.png'
 import img4 from '../../assets/gallery/img4.png'
 import img5 from '../../assets/gallery/img5.png'
 import img6 from '../../assets/gallery/img6.png'
-import img7 from '../../assets/gallery/img7.png'
+// import img7 from '../../assets/gallery/img7.png'
 import img8 from '../../assets/gallery/img8.png'
 import img9 from '../../assets/gallery/img9.png'
 import img10 from '../../assets/gallery/img10.png'
@@ -46,7 +46,7 @@ const GalleryPage = () => {
       img4,
       img5,
       img6,
-      img7,
+      img24,
       img8,
       img9,
       img10,
@@ -63,7 +63,7 @@ const GalleryPage = () => {
       img21,
       img22,
       img23,
-      img24,
+      img13,
       img25,
       img26,
       img27,
@@ -73,12 +73,15 @@ const GalleryPage = () => {
       img31,
       img32,
       img33,
-      img34,
-      img22,
+      img36,
+      img26,
       img25,
       img35,
-      img36,
-      img21
+      img21,
+      img23,
+      img34,
+      img33,
+      img20
     ]
 
     return ( 
