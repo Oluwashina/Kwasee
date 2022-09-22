@@ -11,6 +11,7 @@ module.exports = {
         'hero': "linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../src/assets/pic2.png')",
         'birthday': "linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../src/assets/birthday_img.png')",
         'maternity': "linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../src/assets/maternity.png')",
+        'shopping': "linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../src/assets/shopping.png')",
       }),
     },
   },

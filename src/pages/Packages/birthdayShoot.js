@@ -8,7 +8,7 @@ const BirthdayShootPage = () => {
                 <div className='relative bg-birthday bg-cover bg-center h-[400px] overflow-hidden md:h-[900px]'>
                     {/* <img src={pic2} alt="pic2" className='object-cover w-full' />  */}
                     <div>
-                     <h5 className='hidden md:block text-[#FFFFFF] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold  text-2xl md:text-3xl mt-2 max-w-xs leading-[140%] tracking-wide'>
+                     <h5 className='hidden md:block text-[#FFFFFF] text-center absolute bottom-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold  text-2xl md:text-3xl mt-2 max-w-xs leading-[140%] tracking-wide'>
                      Birthday Shoot</h5>
                     </div>
                 </div>
