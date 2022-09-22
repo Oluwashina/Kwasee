@@ -117,6 +117,9 @@ const ServicesPage = () => {
                 </div>
 
                 <div className='grid grid-cols-2 pt-8'>
+                    <div className='flex h-[650px] overflow-hidden'>
+                        <img src={birthday_img} alt="birthday" className='w-full object-cover' />
+                    </div>
                     <div className='flex flex-col justify-center md:px-8 px-4'>
                         <div className="max-w-md">
                             <h6 className='text-[#262220] tracking-wide font-semibold text-lg md:text-2xl'>Birthday & Maternity Styling </h6>
@@ -124,9 +127,6 @@ const ServicesPage = () => {
                             We help you curate a mood board guide that best suits the theme of your birthday or maternity shoot. We also provide makeup artists and hairstylists that will also create looks that have been curated in the mood board to bring your vision to life. On the day of the shoot, we will be there to style the clothes to create a very detailed look
                             </p>
                         </div>
-                    </div>
-                    <div className='flex h-[650px] overflow-hidden'>
-                        <img src={birthday_img} alt="birthday" className='w-full object-cover' />
                     </div>
                 </div>
 
@@ -145,6 +145,9 @@ const ServicesPage = () => {
                 </div>
 
                 <div className='grid grid-cols-2 pt-8'>
+                <div className='flex h-[650px] overflow-hidden'>
+                        <img src={virtual_img} alt="virtual" className='w-full object-cover' />
+                    </div>
                     <div className='flex flex-col justify-center md:px-8 px-4'>
                         <div className="max-w-md">
                             <h6 className='text-[#262220] tracking-wide font-semibold text-lg md:text-2xl'>Virtual styling and personal shopping</h6>
@@ -153,9 +156,7 @@ const ServicesPage = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex h-[650px] overflow-hidden'>
-                        <img src={virtual_img} alt="virtual" className='w-full object-cover' />
-                    </div>
+                   
                 </div>
 
                 <div className='grid grid-cols-2 pt-8'>
