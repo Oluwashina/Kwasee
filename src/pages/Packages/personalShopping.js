@@ -5,7 +5,7 @@ const PersonalShoppingPage = () => {
     return ( 
         <>
           <div className=''>
-                <div className='relative h-[400px] bg-shopping bg-cover bg-center overflow-hidden md:h-[800px] flex'>
+                <div className='relative h-[400px] bg-shopping bg-cover bg-center overflow-hidden md:h-[800px]'>
                     {/* <img src={pic2} alt="pic2" className='object-cover w-full' />  */}
                     <div>
                      <h5 className='hidden md:block text-[#FFFFFF] text-center absolute bottom-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-2xl md:text-3xl mt-2 max-w-lg leading-[140%] tracking-wide'>
