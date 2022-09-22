@@ -1,12 +1,12 @@
 import React from 'react';
-import pic2 from '../../assets/about_img.png'
+// import pic2 from '../../assets/about_img.png'
 
 const MaternityShootPage = () => {
     return (
         <>
            <div className=''>
-                <div className='relative h-[400px] overflow-hidden md:h-[800px] flex'>
-                    <img src={pic2} alt="pic2" className='object-cover w-full' /> 
+                <div className='relative h-[400px] bg-maternity overflow-hidden md:h-[900px] flex'>
+                    {/* <img src={pic2} alt="pic2" className='object-cover w-full' />  */}
                     <div>
                      <h5 className='hidden md:block text-[#FFFFFF] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold  text-2xl md:text-3xl mt-2 max-w-xs leading-[140%] tracking-wide'>
                      Maternity Shoot</h5>
