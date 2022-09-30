@@ -1,5 +1,5 @@
 import React from 'react';
-import pic2 from '../../assets/maternity.png'
+import pic2 from '../../assets/maternity1.png'
 
 const MaternityShootPage = () => {
     return (

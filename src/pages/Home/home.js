@@ -9,6 +9,11 @@ import Modal from '../../components/Modals/modal'
 import axios from 'axios'
 import pic3 from '../../assets/icons/sho.svg'
 import hero from '../../assets/hero.svg'
+import service1 from '../../assets/T.svg'
+import service2 from '../../assets/S.svg'
+import service3 from '../../assets/Y.svg'
+import service4 from '../../assets/L.svg'
+import service5 from '../../assets/E.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -85,7 +90,7 @@ const HomePage = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            setShow(true)
+            setShow(false)
         }, 3000);
     },[])
 
@@ -146,7 +151,7 @@ const HomePage = () => {
             </div>
 
             <div className='py-10'>
-                <h6 className='text-[#262220] tracking-widest text-center italic font-medium text-xl md:text-2xl'>Packages</h6>
+                <h6 className='text-[#262220] tracking-widest text-center font-della font-medium text-xl md:text-2xl'>Packages</h6>
                 <div className='grid grid-cols-4 gap-56 md:gap-6 mt-8 px-4 md:px-0 overflow-scroll'>
                     <Link to="/virtual-styling" className='bg-virtual_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
 
@@ -177,6 +182,37 @@ const HomePage = () => {
 
                 </div>
 
+                <div className='mt-10 md:mt-12 md:px-8 px-0'>
+                    <h6 className='text-[#262220] tracking-widest text-center font-della font-medium text-xl md:text-2xl'>Testimonials</h6>
+
+                    <Slider  {...settings}>
+                        <div className='mt-4 bg-[#725C5C] px-4'>
+                            <div className='flex flex-col items-center justify-center md:h-[400px] h-[300px]'>
+                                <div className='max-w-md mx-auto text-center'>
+                                    <h6 className='font-raleway text-[#F7F1F0] text-sm font-normal md:text-base italic tracking-wide'>
+                                        “I love you. I love you. I don't think I could thank you enough. What you did is way past the money or anything. I realise now that I wouldn't have had these memories if I didn't have you”
+                                    </h6>
+                                    <p className='font-della mt-3 text-[#F7F1F0] font-medium tracking-wide'>Opeyemi</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div className='mt-4 bg-[#725C5C] px-4'>
+                            <div className='flex flex-col items-center justify-center md:h-[400px] h-[300px]'>
+                                <div className='max-w-md mx-auto text-center'>
+                                    <h6 className='font-raleway text-[#F7F1F0] text-sm font-normal md:text-base italic tracking-wide'>
+                                    “All my looks were a hit back to back. Thank you so much for all you did for this wedding. You're not just my stylist, you're my friend now. I owe you, Jumoke”
+                                    </h6>
+                                    <p className='font-della mt-3 text-[#F7F1F0] font-medium tracking-wide'>Tola</p>
+                                </div>
+                                </div>
+                            </div>
+                   </Slider>
+                   
+
+
+                </div>
+
                 <div className='mt-10 md:mt-12'>
                    {/* <h6 className='text-[#262220] tracking-widest text-center font-medium text-xl md:text-2xl'>Text</h6> */}
                    <Slider className='mt-8' {...settings}>
@@ -199,34 +235,25 @@ const HomePage = () => {
                 </div>
 
                 <div className='mt-10 md:mt-12'>
-                    <h6 className='text-[#262220] italic tracking-[0.03em] text-center font-medium text-xl md:text-2xl'>Our Services</h6>
-                    <div className='mt-8 grid md:grid-cols-5 md:px-8 px-4'>
-                        <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0 md:border-r border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
-                            <h4 className='text-[#262220] text-center text-lg md:text-xl font-semibold tracking-wide'>Bridal Styling</h4>
+                    <h6 className='text-[#262220] font-della tracking-[0.03em] text-center font-medium text-xl md:text-2xl'>Our Services</h6>
+
+                    <div className='mt-4 md:mt-8 grid grid-cols-5'>
+                        <div>
+                            <img src={service1} alt="service1" />
                         </div>
-                        <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0  md:border-r md:border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
-                            <h4 className='text-[#262220] text-lg md:text-xl  text-center font-semibold tracking-wide'>
-                            Birthday & 
-                                Maternity 
-                                Styling </h4>
+                        <div>
+                            <img src={service2} alt="service2" />
                         </div>
-                        <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0  md:border-r md:border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
-                            <h4 className='text-[#262220] text-lg md:text-xl text-center font-semibold tracking-wide'>
-                            Commercial 
-                            Styling </h4>
+                        <div>
+                            <img src={service3} alt="service3" />
                         </div>
-                        <div className='flex flex-col justify-center h-[100px] md:h-[500px] border-b md:border-b-0  md:border-r md:border-[#C3A6A0] border-opacity-[.5] md:border-opacity-[.5] px-4'>
-                            <h4 className='text-[#262220] text-lg md:text-xl text-center  font-semibold tracking-wide'>
-                                    Virtual 
-                                Styling & 
-                                Personal 
-                                Shopping </h4>
+                        <div>
+                            <img src={service4} alt="service4" />
                         </div>
-                        <div className='flex flex-col justify-center h-[100px] md:h-[500px]'>
-                            <h4 className='text-[#262220] text-lg md:text-xl text-center font-semibold tracking-wide px-4'>
-                            Fashion 
-                            Consultation </h4>
+                        <div>
+                            <img src={service5} alt="service5" />
                         </div>
+
                     </div>
                 </div>
             </div>
