@@ -91,7 +91,7 @@ const HomePage = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            setShow(false)
+            setShow(true)
         }, 3000);
     },[])
 
@@ -143,7 +143,7 @@ const HomePage = () => {
                         <img src={hero} alt="hero" />
                     </div>
                     <div className='absolute bottom-10 md:bottom-20 left-4 md:left-10'>
-                        <h5 className='font-della text-[#F7F1F0] md:text-4xl text-lg md:tracking-widest font-medium md:max-w-sm md:mx-auto md:text-center'> Discover a <br/> signature style </h5>  
+                        <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium md:max-w-sm md:mx-auto md:text-center'> Discover a <br/> signature style </h5>  
                         <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>that suits your personality and body type.</p>  
                     </div>                   
                    </div>
@@ -152,7 +152,7 @@ const HomePage = () => {
                             <img src={hero1} alt="hero" />
                         </div>
                         <div className='absolute bottom-10 md:bottom-20 right-6 md:right-20'>
-                            <h5 className='font-della text-[#F7F1F0] md:text-4xl text-lg md:tracking-widest font-medium max-w-sm mx-auto text-right md:text-center'>  It is not whether or <br/> not you have style, </h5>  
+                            <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium max-w-sm mx-auto text-right md:text-center'>  It is not whether or <br/> not you have style, </h5>  
                             <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
                         </div>                   
                     </div>
@@ -161,7 +161,7 @@ const HomePage = () => {
                             <img src={hero2} alt="hero" />
                         </div>
                         <div className='absolute bottom-10 md:bottom-1/2 left-1/2'>
-                            <h5 className='font-della text-[#F7F1F0] md:text-4xl tracking-widest font-medium max-w-sm mx-auto'> Use <br/> Your Style <br/> As A Tool </h5>  
+                            <h5 className='font-della text-[#F7F1F0] md:text-4xl  text-xl tracking-widest font-medium max-w-sm mx-auto'> Use <br/> Your Style <br/> As A Tool </h5>  
                             <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>to stand out</p>  
                         </div>                   
                     </div>
