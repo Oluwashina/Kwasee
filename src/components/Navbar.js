@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link'
-import logo from '../assets/icons/Kwasee_black.svg'
+import logo from '../assets/icons/Kwasee_logo.svg'
 import menu from '../assets/icons/menu.svg'
 import close_icon from '../assets/icons/close.svg'
 
@@ -47,11 +47,11 @@ const NavbarComponent = () => {
         <>
          <div className='py-6 md:py-6 md:px-8 px-4'>
              <div className='text-center md:hidden'>
-                 <p className='text-[#000000] tracking-wide italic md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
+                 <p className='text-[#000000] tracking-wide font-della md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
              </div>
 
              {/* desktop nav menu */}
-             <ul className='md:flex hidden justify-between items-center mt-8'>
+             <ul className='md:flex hidden justify-between font-raleway items-center mt-8'>
                 <li>
                     <Link to="/our-services" className="text-[#262220] text-sm tracking-widest">Our Services</Link>
                 </li>
@@ -72,7 +72,7 @@ const NavbarComponent = () => {
              </ul>
 
              <div className='text-center mt-4 hidden md:block'>
-                 <p className='text-[#000000] tracking-wide italic md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
+                 <p className='text-[#000000] tracking-wide font-della md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
              </div>
 
              {/* mobile nav */}
@@ -92,7 +92,7 @@ const NavbarComponent = () => {
                  <div onClick={toggleClose} className='cursor-pointer absolute right-6 top-6 bg-[#262220] flex justify-center items-center w-[40px] h-[40px] rounded-full'>
                      <img src={close_icon} alt="close" />
                  </div>
-                 <ul className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+                 <ul className='absolute font-della left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
                  <li className='text-center mb-8'>
                         <p onClick={() => handleRoute('home')} className='text-[#262220] font-semibold tracking-wide text-2xl'>Home</p>
                      </li>

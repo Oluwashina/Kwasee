@@ -4,10 +4,10 @@ import pic2 from '../../assets/pic_2.png'
 import pic4 from '../../assets/pic_3.png'
 import pic5 from '../../assets/pic_4.png'
 import pic6 from '../../assets/pic_5.png'
-import logo from '../../assets/icons/Kwasee_white.svg'
+import logo from '../../assets/icons/Kwasee_logoW.svg'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
-import pic3 from '../../assets/icons/pic3.svg'
+import pic3 from '../../assets/icons/sho.svg'
 import hero from '../../assets/hero.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -58,7 +58,8 @@ const HomePage = () => {
 
     const [show, setShow] = useState(false)
 
-    const [fullname, setFullName] = useState("")
+    const [firstname, setFirstName] = useState("")
+    const [lastname, setLastName] = useState("")
     const [email, setEmail] = useState("")
     const [isBtnDisabled, setIsBtnDisabled] = useState(false)
 
@@ -70,7 +71,7 @@ const HomePage = () => {
         e.preventDefault()
         setIsBtnDisabled(true)
         axios.post('https://sheet.best/api/sheets/de4913d8-2e9f-4aa2-a6b8-6acb1d42824c', {
-            fullname: fullname,
+            fullname: firstname + ' ' + lastname ,
             email: email
         })
         .then(response => {
@@ -99,24 +100,30 @@ const HomePage = () => {
                         <img src={pic3} alt="join us" className='w-full' />
                     </div>
                     <div className='text-center mt-6'>
-                        <h6 className='text-[#F7F1F0] tracking-wide font-semibold text-xl'>JOIN OUR FASHION FAM</h6>
+                        <h6 className='text-[#F7F1F0] font-della tracking-wide font-semibold text-xl'>JOIN OUR FASHION FAM</h6>
                     </div>
 
                     <form onSubmit={handleSubmit} className='mt-5'>
                         <div>
                           <input type="text" 
-                          value={fullname}
-                          onChange={(e) => setFullName(e.target.value)} 
-                          className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Full Name" required />
+                          value={firstname}
+                          onChange={(e) => setFirstName(e.target.value)} 
+                          className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="First Name" required />
+                        </div>
+                        <div className='mt-3'>
+                          <input type="text" 
+                          value={lastname}
+                          onChange={(e) => setLastName(e.target.value)} 
+                          className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Last Name" required />
                         </div>
                         <div className='mt-3'>
                           <input type="email"  
                           value={email}
                           onChange={(e) => setEmail(e.target.value)} 
-                          className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Email Address" required />
+                          className="block py-4 px-4 w-full text-[#262220] bg-[#F7F1F0] rounded-[4px] appearance-none text-sm outline-none" placeholder="Email" required />
                         </div>
                         <div className='mt-6'>
-                            <button type="submit" disabled={isBtnDisabled} className="w-full disabled:bg-[#725C5C] disabled:opacity-50  text-[#F7F1F0] bg-[#725C5C] rounded-[4px] tracking-wide focus:outline-none font-semibold text-base px-6 py-4">SUBSCRIBE</button>
+                            <button type="submit" disabled={isBtnDisabled} className="w-full disabled:bg-[#725C5C] disabled:opacity-50 font-della font-medium  text-[#F7F1F0] bg-[#725C5C] rounded-[4px] tracking-wide focus:outline-none font-semibold text-base px-6 py-4">SUBSCRIBE</button>
                         </div>
                    </form>
 
@@ -130,10 +137,10 @@ const HomePage = () => {
                 </div>            
                 <div className='text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                     <div className='flex justify-center'>
-                         <img src={logo} alt="logo" />
+                         <img src={logo} alt="logo" className="w-[120px]" />
                     </div>
-                    <p className='text-[#F7F1F0] tracking-wide leading-5 text-xs md:text-sm mt-1 md:mt-2 max-w-md md:max-w-xl mx-auto'>
-                    We help you discover a signature style that suits your personality and body type. It is not whether or not you have style, is it expressed through your clothes? Use your style as a tool to stand out.
+                    <p className='text-[#F7F1F0] font-raleway font-medium tracking-wide leading-5 text-xs md:text-sm mt-1 md:mt-2 max-w-md md:max-w-xl mx-auto'>
+                    We help you discover a signature style that suits your personality and body type.
                     </p>
                 </div>         
             </div>
