@@ -4,11 +4,11 @@ import pic2 from '../../assets/pic_2.png'
 import pic4 from '../../assets/pic_3.png'
 import pic5 from '../../assets/pic_4.png'
 import pic6 from '../../assets/pic_5.png'
-import logo from '../../assets/icons/Kwasee_logoW.svg'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
 import pic3 from '../../assets/icons/sho.svg'
 import hero from '../../assets/hero.svg'
+import hero1 from '../../assets/hero1.svg'
 import service1 from '../../assets/T.svg'
 import service2 from '../../assets/S.svg'
 import service3 from '../../assets/Y.svg'
@@ -136,49 +136,67 @@ const HomePage = () => {
                 
             </Modal>
 
-            <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
-                <div>
-                    <img src={hero} alt="hero" />
-                </div>            
-                <div className='text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                    <div className='flex justify-center'>
-                         <img src={logo} alt="logo" className="w-[120px]" />
+            <Slider  {...settings}>
+                <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
+                    <div>
+                        <img src={hero} alt="hero" />
                     </div>
-                    <p className='text-[#F7F1F0] font-raleway font-medium tracking-wide leading-5 text-xs md:text-sm mt-1 md:mt-2 max-w-md md:max-w-xl mx-auto'>
-                    We help you discover a signature style that suits your personality and body type.
-                    </p>
-                </div>         
-            </div>
+                    <div className='absolute bottom-10 md:bottom-20 left-4 md:left-10'>
+                        <h5 className='font-della text-[#F7F1F0] md:text-4xl text-lg md:tracking-widest font-medium md:max-w-sm md:mx-auto md:text-center'> Discover a <br/> signature style </h5>  
+                        <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>that suits your personality and body type.</p>  
+                    </div>                   
+                   </div>
+                        <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
+                        <div>
+                            <img src={hero1} alt="hero" />
+                        </div>
+                        <div className='absolute bottom-10 md:bottom-20 right-6 md:right-20'>
+                            <h5 className='font-della text-[#F7F1F0] md:text-4xl text-lg md:tracking-widest font-medium max-w-sm mx-auto text-right md:text-center'>It is not whether or <br/> not you have style, </h5>  
+                            <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
+                        </div>                   
+                    </div>
+                    <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
+                        <div>
+                            <img src={hero} alt="hero" />
+                        </div>
+                        <div className='absolute bottom-10 md:bottom-1/2 left-1/2'>
+                            <h5 className='font-della text-[#F7F1F0] md:text-4xl tracking-widest font-medium max-w-sm mx-auto'> Use <br/> Your Style <br/> As A Tool </h5>  
+                            <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-3'>to stand out</p>  
+                        </div>                   
+                    </div>
+                </Slider>
+          
+          
 
             <div className='py-10'>
                 <h6 className='text-[#262220] tracking-widest text-center font-della font-medium text-xl md:text-2xl'>Packages</h6>
-                <div className='grid grid-cols-4 gap-56 md:gap-6 mt-8 px-4 md:px-0 overflow-scroll'>
-                    <Link to="/virtual-styling" className='bg-virtual_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
+                <div className='grid grid-cols-4 gap-56 md:gap-6 mt-8 px-4 md:px-8 overflow-scroll'>
+                    <div className='bg-virtual_small bg-cover bg-center w-[200px] md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
 
                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-10'>
-                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>VIRTUAL STYLING </h6>
+                            <h6 className='text-[#F7F1F0] text-base md:text-base font-della font-medium tracking-wide'>VIRTUAL STYLING </h6>
                         </div>
 
-                    </Link>
+                    </div>
 
-                    <Link to="/birthday-shoot" className='bg-birthday_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <div  className='bg-birthday_small bg-cover bg-center w-[200px] md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
                       <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-10'>
-                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>BIRTHDAY SHOOT </h6>
+                            <h6 className='text-[#F7F1F0] font-della text-base md:text-base font-medium tracking-wide'>BIRTHDAY SHOOT </h6>
                         </div>
 
-                    </Link>
+                    </div>
 
-                    <Link to="/maternity-shoot" className='bg-maternity_small bg-cover bg-center] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <div className='bg-maternity_small bg-cover bg-center] w-[200px] md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
                         <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-10'>
-                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>MATERNITY SHOOT</h6>
+                            <h6 className='text-[#F7F1F0] font-della text-base md:text-base font-medium tracking-wide'>MATERNITY SHOOT</h6>
                         </div>
-                    </Link>
+                    </div>
 
-                    <Link to="/personal-shopping" className='bg-shopping bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <div className='bg-shopping bg-cover bg-center w-[200px] md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
                         <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-10'>
-                            <h6 className='text-[#F7F1F0] text-base md:text-base font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
+                            <h6 className='text-[#F7F1F0] font-della text-base md:text-base font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
                         </div>
-                     </Link>
+                     </div>
 
                 </div>
 
