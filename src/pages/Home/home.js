@@ -144,7 +144,7 @@ const HomePage = () => {
                     </div>
                     <div className='absolute bottom-10 md:bottom-20 left-4 md:left-10'>
                         <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium md:max-w-sm md:mx-auto md:text-center'> Discover a <br/> signature style </h5>  
-                        <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>that suits your personality and body type.</p>  
+                        <p className='lowercase text-[#F7F1F0] font-raleway font-medium text-xs md:text-sm mt-2 md:mt-4'>that suits your personality and body type.</p>  
                     </div>                   
                    </div>
                         <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
@@ -153,7 +153,7 @@ const HomePage = () => {
                         </div>
                         <div className='absolute bottom-10 md:bottom-20 right-6 md:right-20'>
                             <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium max-w-sm mx-auto text-right md:text-center'>  It is not whether or <br/> not you have style, </h5>  
-                            <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
+                            <p className='lowercase text-[#F7F1F0] font-raleway font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
                         </div>                   
                     </div>
                     <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
@@ -162,7 +162,7 @@ const HomePage = () => {
                         </div>
                         <div className='absolute bottom-10 md:bottom-1/2 left-1/2'>
                             <h5 className='font-della text-[#F7F1F0] md:text-4xl  text-xl tracking-widest font-medium max-w-sm mx-auto'> Use <br/> Your Style <br/> As A Tool </h5>  
-                            <p className='uppercase text-[#F7F1F0] font-della font-medium text-xs md:text-sm mt-2 md:mt-4'>to stand out</p>  
+                            <p className='lowercase text-[#F7F1F0] font-raleway font-medium text-xs md:text-sm mt-2 md:mt-4'>to stand out</p>  
                         </div>                   
                     </div>
                 </Slider>
