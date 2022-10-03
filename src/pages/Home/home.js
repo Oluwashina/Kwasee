@@ -91,7 +91,7 @@ const HomePage = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            setShow(false)
+            setShow(true)
         }, 3000);
     },[])
 
@@ -172,31 +172,40 @@ const HomePage = () => {
             <div className='py-10'>
                 <h6 className='text-[#262220] tracking-widest text-center font-della font-medium text-xl md:text-2xl'>Packages</h6>
                 <div className='grid grid-cols-4 gap-56 md:gap-6 mt-8 px-4 md:px-8 overflow-scroll'>
-                    <Link to="/virtual-styling" className='bg-virtual_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
+                    <Link to="/virtual-styling" className='group bg-virtual_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] rounded-lg md:rounded-none relative'>
 
                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-10'>
                             <h6 className='text-[#F7F1F0] text-base md:text-base font-della font-medium tracking-wide'>VIRTUAL STYLING </h6>
                         </div>
 
+                        <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg group-hover:opacity-[.3]"></div>
+
                     </Link>
 
-                    <Link to="/birthday-shoot" className='bg-birthday_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <Link to="/birthday-shoot" className='group bg-birthday_small bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px] md:h-[400px] relative rounded-lg md:rounded-none'>
                       <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-14 md:bottom-10'>
                             <h6 className='text-[#F7F1F0] font-della text-base md:text-base font-medium tracking-wide'>BIRTHDAY SHOOT </h6>
                         </div>
 
+                        <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg group-hover:opacity-[.3]"></div>
+
+
                     </Link>
 
-                    <Link to="/maternity-shoot" className='bg-maternity_small bg-cover bg-center] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                    <Link to="/maternity-shoot" className='group bg-maternity_small bg-cover bg-center] w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
                         <div className='text-center absolute px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-10'>
                             <h6 className='text-[#F7F1F0] font-della text-base md:text-base font-medium tracking-wide'>MATERNITY SHOOT</h6>
                         </div>
+                        <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg group-hover:opacity-[.3]"></div>
+
                     </Link>
 
-                    <Link to="/personal-shopping" className='bg-shopping bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
-                        <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-10'>
+                    <Link to="/personal-shopping" className='group bg-shopping bg-cover bg-center w-[200px] cursor-pointer md:w-auto h-[250px]  md:h-[400px] relative rounded-lg md:rounded-none'>
+                        <div className='text-center px-6 md:px-0 absolute mx-auto left-0 right-0 bottom-10 md:bottom-6'>
                             <h6 className='text-[#F7F1F0] font-della text-base md:text-base font-medium tracking-wide'>ASSISTED PHYSICAL <br/> SHOPPING</h6>
                         </div>
+                        <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg group-hover:opacity-[.3]"></div>
+
                      </Link>
 
                 </div>
@@ -271,20 +280,25 @@ const HomePage = () => {
                     <h6 className='text-[#262220] font-della tracking-[0.03em] text-center font-medium text-xl md:text-2xl'>Our Services</h6>
 
                     <div className='mt-4 md:mt-8 grid grid-cols-5'>
-                        <Link to="/bridal-style">
+                        <Link to="/bridal-style" className='relative group'>
                             <img src={service1} alt="service1" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/birthday-style">
+                        <Link to="/birthday-style" className='relative group'>
                             <img src={service2} alt="service2" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/commercial-style">
+                        <Link to="/commercial-style" className='relative group'>
                             <img src={service3} alt="service3" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/virtual-style">
+                        <Link to="/virtual-style" className='relative group'>
                             <img src={service4} alt="service4" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/fashion-consult">
+                        <Link to="/fashion-consult" className='relative group'>
                             <img src={service5} alt="service5" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
 
                     </div>

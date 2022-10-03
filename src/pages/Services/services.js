@@ -12,24 +12,29 @@ const ServicesPage = () => {
             <div className='pt-10'>
                 <h6 className='text-[#262220] tracking-widest font-della text-center font-medium text-2xl'>Our Services</h6>
                
-                 <div className='mt-4 md:mt-8 grid grid-cols-5'>
-                        <Link to="/bridal-style">
+                <div className='mt-4 md:mt-8 grid grid-cols-5'>
+                        <Link to="/bridal-style" className='relative group'>
                             <img src={service1} alt="service1" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/birthday-style">
+                        <Link to="/birthday-style" className='relative group'>
                             <img src={service2} alt="service2" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/commercial-style">
+                        <Link to="/commercial-style" className='relative group'>
                             <img src={service3} alt="service3" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/virtual-style">
+                        <Link to="/virtual-style" className='relative group'>
                             <img src={service4} alt="service4" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
-                        <Link to="/fashion-consult">
+                        <Link to="/fashion-consult" className='relative group'>
                             <img src={service5} alt="service5" />
+                            <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 group-hover:opacity-[.2]"></div>
                         </Link>
 
-                    </div>
+                 </div>
             </div>
         </>
      );
