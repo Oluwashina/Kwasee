@@ -91,7 +91,7 @@ const HomePage = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            setShow(true)
+            setShow(false)
         }, 3000);
     },[])
 
@@ -142,18 +142,18 @@ const HomePage = () => {
                     <div>
                         <img src={hero} alt="hero" />
                     </div>
-                    <div className='absolute bottom-10 md:bottom-20 left-4 md:left-10'>
+                    <div className='absolute bottom-10 md:bottom-20 right-6 md:right-20'>
                         <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium md:max-w-sm md:mx-auto md:text-center'> Discover a <br/> signature style </h5>  
-                        <p className='lowercase text-[#F7F1F0] font-raleway font-medium text-xs md:text-sm mt-2 md:mt-4'>that suits your personality and body type.</p>  
+                        <p className='lowercase text-[#F7F1F0] font-raleway italic font-medium text-xs md:text-sm mt-2 md:mt-4'>that suits your personality and body type.</p>  
                     </div>                   
                    </div>
                         <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
                         <div>
                             <img src={hero1} alt="hero" />
                         </div>
-                        <div className='absolute bottom-10 md:bottom-20 right-6 md:right-20'>
+                        <div className='absolute bottom-10 md:bottom-20 left-6 md:left-20'>
                             <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium max-w-sm mx-auto text-right md:text-center'>  It is not whether or <br/> not you have style, </h5>  
-                            <p className='lowercase text-[#F7F1F0] font-raleway font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
+                            <p className='lowercase text-[#F7F1F0] font-raleway md:text-center italic font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
                         </div>                   
                     </div>
                     <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
@@ -162,7 +162,7 @@ const HomePage = () => {
                         </div>
                         <div className='absolute bottom-10 md:bottom-1/2 left-1/2'>
                             <h5 className='font-della text-[#F7F1F0] md:text-4xl  text-xl tracking-widest font-medium max-w-sm mx-auto'> Use <br/> Your Style <br/> As A Tool </h5>  
-                            <p className='lowercase text-[#F7F1F0] font-raleway font-medium text-xs md:text-sm mt-2 md:mt-4'>to stand out</p>  
+                            <p className='lowercase text-[#F7F1F0] font-raleway italic font-medium text-xs md:text-sm mt-2 md:mt-4'>to stand out</p>  
                         </div>                   
                     </div>
                 </Slider>
@@ -236,9 +236,9 @@ const HomePage = () => {
                     Sorry, your browser doesn't support embedded videos.
                     </video> */}
 
-                <div className=''>
+                <div className='max-w-3xl mx-auto'>
                     <iframe width="100%" 
-                    height="800" src="https://www.youtube.com/embed/PO_5uiap9Cg" 
+                    height="500" src="https://www.youtube.com/embed/PO_5uiap9Cg" 
                     title="Commercial Styling" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
@@ -271,19 +271,19 @@ const HomePage = () => {
                     <h6 className='text-[#262220] font-della tracking-[0.03em] text-center font-medium text-xl md:text-2xl'>Our Services</h6>
 
                     <div className='mt-4 md:mt-8 grid grid-cols-5'>
-                        <Link to="/our-services">
+                        <Link to="/bridal-style">
                             <img src={service1} alt="service1" />
                         </Link>
-                        <Link to="/our-services">
+                        <Link to="/birthday-style">
                             <img src={service2} alt="service2" />
                         </Link>
-                        <Link to="/our-services">
+                        <Link to="/commercial-style">
                             <img src={service3} alt="service3" />
                         </Link>
-                        <Link to="/our-services">
+                        <Link to="/virtual-style">
                             <img src={service4} alt="service4" />
                         </Link>
-                        <Link to="/our-services">
+                        <Link to="/fashion-consult">
                             <img src={service5} alt="service5" />
                         </Link>
 

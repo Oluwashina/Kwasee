@@ -8,7 +8,7 @@ const AboutPage = () => {
                 <div className='relative bg-hero bg-cover h-[400px] overflow-hidden md:h-[800px] flex'>
                     {/* <img src={pic2} alt="pic2" className='object-cover w-full' />  */}
                     <div>
-                     <h5 className='hidden md:block font-della text-[#FFFFFF] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold  text-2xl md:text-4xl mt-2 max-w-xs md:leading-[140%] tracking-[0.05em]'>
+                     <h5 className='hidden md:block font-della text-[#FFFFFF] absolute md:bottom-16 md:left-10 font-semibold text-2xl md:text-3xl mt-2 max-w-xs md:leading-[140%] tracking-[0.05em]'>
                         THE JOURNEY BEGINS</h5>
                     </div>
                 </div>

@@ -10,6 +10,11 @@ import VirtualStylingPage from './pages/Packages/virtualStyling';
 import BirthdayShootPage from './pages/Packages/birthdayShoot';
 import MaternityShootPage from './pages/Packages/maternityShoot';
 import PersonalShoppingPage from './pages/Packages/personalShopping';
+import BridalStylePage from './pages/Services/bridal';
+import BirthdayMaternityPage from './pages/Services/birthdayMaternity';
+import CommercialStylePage from './pages/Services/commercialStyle';
+import VirtualStylePage from './pages/Services/virtualStyle';
+import FashionConsultPage from './pages/Services/fashionConsult';
 
 
 function App() {
@@ -48,6 +53,38 @@ function App() {
                   <Route path="/personal-shopping"  element={ 
                       <PageWrapper>
                         <PersonalShoppingPage />
+                      </PageWrapper>} 
+                      />
+
+                <Route path="/bridal-style"  element={ 
+                      <PageWrapper>
+                        <BridalStylePage />
+                      </PageWrapper>} 
+                      />
+
+                  
+                <Route path="/birthday-style"  element={ 
+                      <PageWrapper>
+                        <BirthdayMaternityPage />
+                      </PageWrapper>} 
+                      />
+                
+                <Route path="/commercial-style"  element={ 
+                      <PageWrapper>
+                        <CommercialStylePage />
+                      </PageWrapper>} 
+                      />
+
+                <Route path="/virtual-style"  element={ 
+                      <PageWrapper>
+                        <VirtualStylePage />
+                      </PageWrapper>} 
+                      />
+                
+
+                <Route path="/fashion-consult"  element={ 
+                      <PageWrapper>
+                        <FashionConsultPage />
                       </PageWrapper>} 
                       />
 
