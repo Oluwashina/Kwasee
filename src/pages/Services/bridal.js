@@ -1,5 +1,5 @@
 import React from 'react';
-import bridal_img from '../../assets/bridal_style.svg'
+import bridal_img from '../../assets/photo1.jpg'
 
 const BridalStylePage = () => {
     return ( 

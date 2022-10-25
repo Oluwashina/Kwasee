@@ -7,7 +7,7 @@ import pic6 from '../../assets/pic_5.png'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
 // import pic3 from '../../assets/icons/sho.svg'
-import pic3 from '../../assets/IMG_0158 1.png'
+import pic3 from '../../assets/IMG_0158 1.jpg'
 import hero from '../../assets/hero.svg'
 import hero1 from '../../assets/hero1.svg'
 import hero2 from '../../assets/hero2.svg'
@@ -152,7 +152,7 @@ const HomePage = () => {
                             <img src={hero1} alt="hero" />
                         </div>
                         <div className='absolute bottom-10 md:bottom-20 left-6 md:left-20'>
-                            <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium max-w-sm mx-auto text-right md:text-center'>  It is not whether or <br/> not you have style, </h5>  
+                            <h5 className='font-della text-[#F7F1F0] md:text-4xl text-xl md:tracking-widest font-medium max-w-sm mx-auto md:text-center'>  It is not whether or <br/> not you have style, </h5>  
                             <p className='lowercase text-[#F7F1F0] font-raleway md:text-center italic font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
                         </div>                   
                     </div>
