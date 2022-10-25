@@ -28,6 +28,9 @@ const FooterComponent = () => {
                             <li>
                                 <a href="mailto:kwasee.official@gmail.com" className="text-[#F7F1F0] text-sm tracking-wide">kwasee.official@gmail.com</a>
                             </li>
+                            <li>
+                                <a href="tel:+2349012324754" className="text-[#F7F1F0] text-sm tracking-wide">+2349012324754</a>
+                            </li>
                         </ul>
                   </div>
                   <div className='mt-8'>
@@ -45,7 +48,13 @@ const FooterComponent = () => {
                     <h6 className="text-[#F7F1F0] font-raleway opacity-[.5] md:opacity-[1] font-semibold tracking-wide">SOCIAL MEDIA</h6>
                         <ul className="mt-1 md:mt-2">
                             <li className='mt-1'>
+                                <a href="https://www.facebook.com/Kwasee.official" target="_blank" rel='noreferrer' className="text-[#F7F1F0] text-sm tracking-wide">Facebook</a>
+                            </li>
+                            <li className='mt-1'>
                                 <a href="https://www.instagram.com/kwasee.official/" target="_blank" rel='noreferrer' className="text-[#F7F1F0] text-sm tracking-wide">Instagram</a>
+                            </li>
+                            <li className='mt-1'>
+                                <a href="https://twitter.com/kwaseestyle?s=11&t=IvllmuckER8fN-DqE_T6GQ" target="_blank" rel='noreferrer' className="text-[#F7F1F0] text-sm tracking-wide">Twitter</a>
                             </li>
                         </ul>
                   </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import pic2 from '../../assets/shopping.png'
+import pic2 from '../../assets/personal_shop.png'
 
 const PersonalShoppingPage = () => {
     return ( 

@@ -46,9 +46,10 @@ const NavbarComponent = () => {
     return ( 
         <>
          <div className='py-6 md:py-6 md:px-8 px-4'>
-             <div className='text-center md:hidden'>
+
+             {/* <div className='text-center md:hidden'>
                  <p className='text-[#000000] tracking-wide font-della md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
-             </div>
+             </div> */}
 
              {/* desktop nav menu */}
              <ul className='md:flex hidden justify-between font-raleway items-center mt-8'>
@@ -71,12 +72,9 @@ const NavbarComponent = () => {
                 </li>
              </ul>
 
-             <div className='text-center mt-4 hidden md:block'>
-                 <p className='text-[#000000] tracking-wide font-della md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
-             </div>
-
+        
              {/* mobile nav */}
-             <div className={navShow ? 'hidden' : 'md:hidden flex items-center justify-between mt-6'}>
+             <div className={navShow ? 'hidden' : 'md:hidden flex items-center justify-between '}>
                  <div>
                    <Link to="/" className="text-[#262220] text-sm tracking-widest">
                         <img src={logo} className="w-[120px]" alt="logo" />    
@@ -85,6 +83,10 @@ const NavbarComponent = () => {
                  <div onClick={toggleOpen} className='cursor-pointer'>
                     <img src={menu} alt="menu" className='w-[25px] h-[25px]' />
                  </div>
+             </div>
+
+             <div className='text-center mt-4'>
+                 <p className='text-[#000000] tracking-wide font-della md:tracking-widest text-xs md:text-sm'>Becoming the best version of yourself, one outfit at a time</p>
              </div>
 
              {/* mobile menu */}
