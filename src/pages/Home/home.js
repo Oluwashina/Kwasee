@@ -138,7 +138,7 @@ const HomePage = () => {
             </Modal>
 
             <Slider  {...settings}>
-                <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
+                <div className='h[400px] md:h-[800px] flex overflow-hidden relative'>
                     <div>
                         <img src={hero} alt="hero" />
                     </div>
@@ -147,7 +147,7 @@ const HomePage = () => {
                         <p className='lowercase text-[#F7F1F0] font-raleway italic font-medium text-xs md:text-sm mt-2 md:mt-4'>that suits your personality and body type.</p>  
                     </div>                   
                    </div>
-                        <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
+                        <div className='h[400px] md:h-[800px] flex overflow-hidden relative'>
                         <div>
                             <img src={hero1} alt="hero" />
                         </div>
@@ -156,7 +156,7 @@ const HomePage = () => {
                             <p className='lowercase text-[#F7F1F0] font-raleway md:text-center italic font-medium text-xs md:text-sm mt-2 md:mt-4'>is it expressed through your clothes? </p>  
                         </div>                   
                     </div>
-                    <div className='bg-[#262220] h[400px] md:h-[800px] flex overflow-hidden relative'>
+                    <div className='h[400px] md:h-[800px] flex overflow-hidden relative'>
                         <div>
                             <img src={hero2} alt="hero" />
                         </div>
