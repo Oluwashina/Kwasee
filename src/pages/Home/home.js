@@ -160,7 +160,7 @@ const HomePage = () => {
                         <div>
                             <img src={hero2} alt="hero" />
                         </div>
-                        <div className='absolute bottom-10 md:bottom-1/2 left-1/2'>
+                        <div className='absolute bottom-10 md:bottom-1/4 left-1/2'>
                             <h5 className='font-della text-[#F7F1F0] md:text-4xl  text-xl tracking-widest font-medium max-w-sm mx-auto'> Use <br/> Your Style <br/> As A Tool </h5>  
                             <p className='lowercase text-[#F7F1F0] font-raleway italic font-medium text-xs md:text-sm mt-2 md:mt-4'>to stand out</p>  
                         </div>                   

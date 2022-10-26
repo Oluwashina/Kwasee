@@ -36,6 +36,12 @@ import img33 from '../../assets/gallery/img33.png'
 import img34 from '../../assets/gallery/img34.png'
 import img35 from '../../assets/gallery/img35.png'
 import img36 from '../../assets/gallery/img36.png'
+import img37 from '../../assets/gallery/img37.jpg'
+import img38 from '../../assets/gallery/img38.jpg'
+import img39 from '../../assets/gallery/img39.JPG'
+import img40 from '../../assets/photo1.jpg'
+import img41 from '../../assets/gallery/img41.jpg'
+import img42 from '../../assets/gallery/img42.jpg'
 
 const GalleryPage = () => {
 
@@ -46,7 +52,7 @@ const GalleryPage = () => {
       img4,
       img5,
       img6,
-      img24,
+      img18,
       img8,
       img9,
       img10,
@@ -57,31 +63,31 @@ const GalleryPage = () => {
       img15,
       img16,
       img17,
-      img18,
-      img19,
+      img24,
+      img28,
       img20,
       img21,
       img22,
       img23,
-      img13,
       img25,
-      img26,
       img27,
-      img28,
+      img19,
       img29,
       img30,
       img31,
       img32,
-      img33,
+      img34,
       img36,
       img26,
-      img25,
       img35,
-      img21,
-      img23,
-      img34,
+      img38,
+      img39,
       img33,
-      img20
+      img37,
+      img40,
+      img41,
+      img42
+      
     ]
 
     return ( 
