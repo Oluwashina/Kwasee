@@ -68,7 +68,7 @@ const NavbarComponent = () => {
                     <Link to="/about-us" className="text-[#262220] text-sm tracking-widest">About Us</Link>
                 </li>
                 <li>
-                    <Link to="/#footer" className="text-[#262220] text-sm tracking-widest">Contact Us</Link>
+                    <a href="mailto:kwasee.official@gmail.com" className="text-[#262220] text-sm tracking-widest">Contact Us</a>
                 </li>
              </ul>
 
