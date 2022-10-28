@@ -86,7 +86,7 @@ const HomePage = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            setShow(false)
+            setShow(true)
         }, 3000);
     },[])
 
