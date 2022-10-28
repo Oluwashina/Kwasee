@@ -6,15 +6,15 @@ import pic5 from '../../assets/pic_4.png'
 import pic6 from '../../assets/pic_5.png'
 import Modal from '../../components/Modals/modal'
 import axios from 'axios'
-// import pic3 from '../../assets/icons/sho.svg'
 import pic3 from '../../assets/IMG_0158 1.jpg'
 import hero from '../../assets/hero_.png'
-import hero1 from '../../assets/hero1.svg'
-import hero2 from '../../assets/hero2.svg'
+import hero1 from '../../assets/hero1.png'
+import hero2 from '../../assets/hero2.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
+
 
 const HomePage = () => {
 
@@ -276,30 +276,38 @@ const HomePage = () => {
 
                     <div className='mt-4 md:mt-8 grid grid-cols-5 gap-56 md:gap-0 mt-8 px-4 md:px-0 overflow-scroll'>
                     <Link to="/bridal-style" className='group bg-service2 bg-cover bg-center bg-no-repeat w-[200px] cursor-pointer md:w-full h-[400px] md:h-[677px] rounded-lg md:rounded-none relative'>
-                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-14'>
+                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-20 md:bottom-44'>
                             <h6 className='text-[#F7F1F0] text-2xl md:text-3xl font-della font-medium'>Bridal <br/> Styling </h6>
                         </div>
                         <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg md:group-hover:opacity-[.3]"></div>
                     </Link>
 
                     <Link to="/birthday-style" className='group bg-service1 bg-cover bg-center bg-no-repeat w-[200px] cursor-pointer md:w-auto h-[400px] md:h-[677px] relative rounded-lg md:rounded-none'>
+                   
+                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-20 md:bottom-44'>
+                            <h6 className='text-[#F7F1F0] text-2xl md:text-3xl font-della font-medium'>  Birthday & <br/> Maternity <br/> Styling  </h6>
+                        </div>
+                  
                         <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg md:group-hover:opacity-[.3]"></div>
                     </Link>
 
                     <Link to="/commercial-style" className='group bg-service3 w-[200px] bg-cover bg-center bg-no-repeat  cursor-pointer md:w-auto h-[400px] md:h-[677px] relative rounded-lg md:rounded-none'>
-                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-20'>
+                        <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-20 md:bottom-44'>
                             <h6 className='text-[#F7F1F0] text-2xl md:text-3xl font-della font-medium'>Commercial <br/> Styling </h6>
                         </div>
                         <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg md:group-hover:opacity-[.3]"></div>
                     </Link>
 
                     <Link to="/virtual-style" className='group bg-service4 bg-cover bg-no-repeat bg-center  w-[200px] cursor-pointer md:w-auto h-[400px]  md:h-[677px] relative rounded-lg md:rounded-none'>
-                        
+                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-44'>
+                            <h6 className='text-[#F7F1F0] text-2xl md:text-3xl font-della font-medium'>
+                            Virtual Styling &  <br/> Personal <br/> Shopping  </h6>
+                        </div>
                         <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg md:group-hover:opacity-[.3]"></div>
                      </Link>
 
                      <Link to="/fashion-consult" className='group bg-service5 bg-cover bg-center bg-no-repeat  w-[200px] cursor-pointer md:w-auto h-[400px]  md:h-[677px] relative rounded-lg md:rounded-none'>
-                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-10 md:bottom-14'>
+                         <div className='text-center absolute  px-6 md:px-0 mx-auto left-0 right-0 bottom-20 md:bottom-44'>
                             <h6 className='text-[#F7F1F0] text-2xl md:text-3xl font-della font-medium'>Fashion <br/> Consultation </h6>
                         </div>
                         <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 md:rounded-none rounded-lg md:group-hover:opacity-[.3]"></div>
